@@ -39,7 +39,7 @@ if st.button("Analyze Toxicity"):
             time.sleep(5)
 
             highlighted_text = '''
-:black[
+:red[
 Alice: Hey everyone, thanks for joining on time.]:black[Let’s get started with the quarterly report review.]:black[
 Bob: Sure, Alice.]:black[But I hope this time you’ve actually made sense of the numbers unlike last time, which was a mess.]:black[
 Charlie: Easy, Bob.]:black[No need for that tone.]:black[Alice, please go ahead.]:black[
