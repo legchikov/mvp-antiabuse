@@ -73,9 +73,9 @@ if st.button("Analyze Toxicity"):
             # highlighted_text = ''.join([highlight_text(sentence, score) for sentence, score in analyzed_results])
             time.sleep(5)
 
-            highlighted_text = ''':ok: [Alice: Hey everyone, thanks for joining on time.]
-:ok: [Let’s get started with the quarterly report review.]
-:ok: [Bob: Sure, Alice.]
+            highlighted_text = ''':ok: [Alice: Hey everyone, thanks for joining on time.]\n
+:ok: [Let’s get started with the quarterly report review.]\n
+:ok: [Bob: Sure, Alice.]\n
 :ok: [But I hope this time you’ve actually made sense of the numbers unlike last time, which was a mess.]
 :ok: [Charlie: Easy, Bob.]
 :ok: [No need for that tone.]
