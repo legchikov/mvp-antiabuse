@@ -25,7 +25,7 @@ def highlight_text(text, score):
         color = "orange"
     else:
         color = "black"
-    return f"<span style='color: {color};'>{text}</span>"
+    return f":{color}[{text}]"
 
 st.title("Meeting Transcript Toxicity Analyzer")
 transcript = st.text_area("Paste your meeting transcript here:", height=300)
