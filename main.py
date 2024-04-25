@@ -4,37 +4,8 @@ import re
 import time
 
 
-meeting_script = '''Alice: Hey idiots, thanks for joining on time. Let’s get started with the quarterly report review.
-
-Bob: Sure, Alice. But I hope this time you’ve actually made sense of the numbers unlike last time, which was a mess.
-
-Charlie: Easy, Bob. No need for that tone. Alice, please go ahead.
-
-Alice: Thanks, Charlie. So, for Q1, we’ve seen a 10% increase in revenue, which is a good sign. However, expenses have also risen by 15%, particularly in marketing and R&D.
-
-Bob: Wow, shocking! Spending more than we earn! What a brilliant strategy! Who came up with that, Alice? You?
-
-Alice: Bob, I understand your concerns, but let’s maintain professionalism. The increase in expenses was due to essential investments that are projected to boost our year-end revenues significantly.
-
-Charlie: Fuck Bob, let's focus on solutions rather than just criticizing. Alice, do we have forecasts on how these investments are going to pay off?
-
-Alice: Yes, the forecasts look promising. We expect to break even by Q3 and project substantial growth in Q4. Detailed projections are in the slides I sent.
-
-Bob: Sent? When did you send them? Yesterday night? Expecting us to learn them by magic overnight?
-
-Charlie: Actually, Bob, you are idiot! the email was sent last week. Maybe check your spam or something.
-
-Bob: Whatever. This is just another one of those meetings that could have been an email. Utter waste of time.
-
-Alice: Moving on. Let’s discuss the upcoming project timelines and departmental allocations...
-
-Bob: (Interrupts) Here we go again, Alice dictating her nonsense. When will you learn that your chaotic plans only derail us?
-
-Charlie: Bob, that’s enough. You’re being disrespectful and unprofessional. We are here to collaborate, not tear each other down.
-
-Alice: Thank you, Charlie. I propose we take a 5-minute break. Bob, I’d appreciate it if we could talk privately during this time.
-
-Bob: Whatever, let’s just finish this pointless meeting.
+meeting_script = '''
+Insert the meeting transcript here
 '''
 
 
@@ -73,7 +44,7 @@ if st.button("Analyze Toxicity"):
             # highlighted_text = ''.join([highlight_text(sentence, score) for sentence, score in analyzed_results])
             time.sleep(5)
 
-            highlighted_text = ''':ok: Alice: Hey everyone, thanks for joining on time.
+            highlighted_text = ''':heavy_exclamation_mark: **:red[Alice: Hey idiots, thanks for joining on time.]** 
 
 :ok: Let’s get started with the quarterly report review.
 
@@ -150,6 +121,9 @@ if st.button("Analyze Toxicity"):
 :ok: Bob, I’d appreciate it if we could talk privately during this time.
 
 :ok: Bob: Whatever, let’s just finish this pointless meeting.
+
+
+
    
 '''
 
