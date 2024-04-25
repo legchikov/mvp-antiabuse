@@ -57,6 +57,6 @@ Charlie: Bob, that’s enough.]:black[You’re being disrespectful and unprofess
 Alice: Thank you, Charlie.]:black[I propose we take a 5-minute break.]:black[Bob, I’d appreciate it if we could talk privately during this time.]:black[
 Bob: Whatever, let’s just finish this pointless meeting.]
 '''
-            st.markdown(highlighted_text, unsafe_allow_html=True)
+            st.write(highlighted_text)
     else:
         st.error("Please paste a transcript to analyze.")
