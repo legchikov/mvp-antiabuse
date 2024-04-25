@@ -8,6 +8,11 @@ meeting_script = '''
 Insert the meeting transcript here
 '''
 
+st.set_page_config(
+    page_title='Harmonix MVP',
+    page_icon="😍"                  
+)
+
 
 # Load a toxicity detection model
 def analyze_toxicity(text):
@@ -35,7 +40,7 @@ def highlight_text(text, score):
     return f":{color}[{text}]"
 
 st.title("Meeting Transcript Toxicity Analyzer")
-transcript = st.text_area("Paste your meeting transcript here:", height=300, value=meeting_script)
+transcript = st.text_area("Paste your meeting transcript here:", height=300, placeholder=meeting_script)
 
 if st.button("Analyze Toxicity"):
     if transcript:
