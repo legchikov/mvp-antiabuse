@@ -8,7 +8,8 @@ def analyze_toxicity(text):
     """ Analyze the toxicity of each sentence in a given text. """
     results = []
     sentences = re.split(r"(?<!\w\.\w.)(?<![A-Z][a-z]\.)(?<=\.|\?)\s", text)
-    for sentence in sentences:
+    for i, sentence in enumerate(sentences):
+        print(f'{i=}')
         if sentence.strip():
             result = Detoxify('original').predict(sentence)
             score = result['toxicity']
